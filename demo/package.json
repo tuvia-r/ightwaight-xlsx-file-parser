@@ -18,6 +18,7 @@
     "xlsx-file-parser-light": "0.0.3"
   },
   "devDependencies": {
+    "@types/node": "^18.7.14",
     "assert": "^2.0.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
