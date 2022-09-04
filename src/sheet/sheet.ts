@@ -26,7 +26,7 @@ export class Sheet {
 		return Math.min(...this.cells.map((c) => c.column));
 	}
 
-	get rowsAsJson() {
+	get rowsAsJson(): (string | number)[][] {
 		const res: any[] = [];
 		for (
 			let i = this.startRow;
