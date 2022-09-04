@@ -2,13 +2,13 @@ import XLSXParser from 'xlsx-file-parser-light';
 
 
 const uploadFileBtn = document.getElementById('upload-button');
-const fileInput = document.getElementById('file-input') as HTMLInputElement;
-const resultDiv = document.getElementById('result') as HTMLDivElement;
+const fileInput = document.getElementById('file-input');
+const resultDiv = document.getElementById('result');
 
-function makeTableHTML(ar: any[]) {
+function makeTableHTML(ar) {
     return `<table class="table table-striped table-bordered">
-    <thead>${ar.slice(0, 1).reduce((c, o) => c += `<tr scope="col">${o.reduce((c: any, d: any) => (c += `<td>${d}</td>`), '')}</tr>`, '')}<thead>
-    <tbody>${ar.slice(1).reduce((c, o) => c += `<tr scope="row">${o.reduce((c: any, d: any) => (c += `<td>${d}</td>`), '')}</tr>`, '')}<tbody>
+    <thead>${ar.slice(0, 1).reduce((c, o) => c += `<tr scope="col">${o.reduce((c, d) => (c += `<td>${d}</td>`), '')}</tr>`, '')}<thead>
+    <tbody>${ar.slice(1).reduce((c, o) => c += `<tr scope="row">${o.reduce((c, d) => (c += `<td>${d}</td>`), '')}</tr>`, '')}<tbody>
     </table>`
 }
 
@@ -26,11 +26,11 @@ fileInput.addEventListener('change', async () => {
         return;
     }
 
-    const buffer = await new Promise<Buffer>((res) => {
+    const buffer = await new Promise((res) => {
 
         const reader = new FileReader()
-        reader.onload = async (e: ProgressEvent<FileReader>) => {
-            const data = e.target?.result as Buffer;
+        reader.onload = async (e) => {
+            const data = e.target?.result;
             res(data)
         };
 

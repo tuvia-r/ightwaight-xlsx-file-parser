@@ -10,19 +10,18 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf build && tsc && rm -rf dist && parcel build build/index.js && cp src/index.html dist",
-    "serve": "rm -rf build && tsc && cp src/index.html build && rm -rf dist && parcel build/index.html",
+    "build": "rm -rf dist && parcel build src/index.js && cp src/index.html dist",
+    "serve": "rm -rf dist && parcel src/index.html",
     "tsc": "tsc",
     "watch": "tsc --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.7.0",
-    "typescript": "^4.8.2",
     "xlsx-file-parser-light": "0.0.4"
   },
   "devDependencies": {
+    "parcel": "^2.7.0",
     "@types/node": "^18.7.14",
     "assert": "^2.0.0",
     "browserify-zlib": "^0.2.0",
