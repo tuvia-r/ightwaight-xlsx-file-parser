@@ -9,3 +9,5 @@ build
 xlsx-file-parser-light*
 
 .parcel*
+
+.DS_Store

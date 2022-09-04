@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/tuvia-r/lightwaight-xlsx-file-parser#readme",
   "dependencies": {
+    "buffer": "^6.0.3",
     "jszip": "^3.10.1",
     "xmldom": "^0.6.0",
     "xpath": "^0.0.32"
   },
   "devDependencies": {
     "@types/node": "^18.7.14",
-    "@types/unzipper": "^0.10.5",
     "@types/xmldom": "^0.1.31",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "auto-changelog": "^2.4.0",
