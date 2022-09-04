@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": true,
+        "checkJs": false,
+        "outDir": "build",
+        "target": "ESNext",
+        "moduleResolution": "node",
+        "typeRoots": [
+            "../node_modules/@types"
+        ],
+        "esModuleInterop": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}

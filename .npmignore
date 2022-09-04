@@ -1,0 +1,14 @@
+node_modules
+node_modules/**/*
+
+src
+
+demo
+
+.github
+
+.vscode
+
+xlsx-file-parser-light*
+
+.parcel*

@@ -1,0 +1,31 @@
+{
+  "name": "xlsx-file-parser-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build && tsc && rm -rf dist && parcel build build/index.js && cp src/index.html dist",
+    "serve": "rm -rf build && tsc && cp src/index.html build && rm -rf dist && parcel build/index.html",
+    "tsc": "tsc",
+    "watch": "tsc --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.7.0",
+    "typescript": "^4.8.2",
+    "xlsx-file-parser-light": "file:../xlsx-file-parser-light-0.0.1.tgz"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "constants-browserify": "^1.0.0",
+    "events": "^3.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.4"
+  }
+}

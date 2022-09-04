@@ -1,11 +1,11 @@
-# lightwaight-xlsx-file-parser
+# xlsx-file-parser-light
 
 based on https://github.com/trevordixon/excel.js work for local files.
 
 # installation
 
 ```sh
-$ npm i lightwaight-xlsx-file-parser
+$ npm i xlsx-file-parser-light
 ```
 
 # Usage
@@ -16,6 +16,8 @@ $ npm i lightwaight-xlsx-file-parser
     ...
     const parser = new XLSXParser(buffer);
     const sheets = await parser.parse();
+
+    const sheetsJson = sheets.map(sheet => sheet.rowsAsJson);
 ```
 
 # sheet
