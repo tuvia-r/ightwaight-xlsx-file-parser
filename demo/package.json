@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "targets": {
+    "main": {
+      "includeNodeModules": true
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && tsc && rm -rf dist && parcel build build/index.js && cp src/index.html dist",
