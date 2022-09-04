@@ -10,7 +10,7 @@ const NA = {
 
 export interface ParsedFile {
 	name: string;
-	contents: Buffer;
+	contents: string;
 }
 
 export class XLSXParser {
@@ -37,7 +37,7 @@ export class XLSXParser {
 		this.filesParsed = await Promise.all(
 			files.map(async (file) => ({
 				name: file.path,
-				contents: await file.file.async('nodebuffer'),
+				contents: await file.file.async('string'),
 			}))
 		);
 
@@ -116,7 +116,7 @@ export class XLSXParser {
 
 		const sharedStringsXml =
 			new XMLDOM.DOMParser().parseFromString(
-				sharedStrings?.contents.toString()
+				sharedStrings?.contents
 			);
 		const sharedValues = select(
 			"//a:si",
