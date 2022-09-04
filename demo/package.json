@@ -5,9 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && parcel build src/index.js && cp src/index.html dist",
-    "serve": "rm -rf dist && parcel src/index.html",
-    "tsc": "tsc",
-    "watch": "tsc --watch"
+    "serve": "rm -rf dist && parcel src/index.html"
   },
   "author": "",
   "license": "ISC",
@@ -15,13 +13,12 @@
     "xlsx-file-parser-light": "0.0.4"
   },
   "devDependencies": {
-    "parcel": "^2.7.0",
-    "@types/node": "^18.7.14",
     "assert": "^2.0.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "constants-browserify": "^1.0.0",
     "events": "^3.3.0",
+    "parcel": "^2.7.0",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
     "stream-browserify": "^3.0.0",
