@@ -2,7 +2,9 @@
 
 based on https://github.com/trevordixon/excel.js work for local files.
 
-# installation
+# (Demo)[https://tuvia-r.github.io/lightwaight-xlsx-file-parser/]
+
+# Installation
 
 ```sh
 $ npm i xlsx-file-parser-light
@@ -20,7 +22,7 @@ $ npm i xlsx-file-parser-light
     const sheetsJson = sheets.map(sheet => sheet.rowsAsJson);
 ```
 
-# sheet
+## sheet
 
 ```ts
 class Sheet {
