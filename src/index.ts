@@ -1,3 +1,3 @@
-import {XLSXParser} from './parser';
+import { XLSXParser } from "./parser";
 
 export default XLSXParser;
