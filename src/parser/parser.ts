@@ -1,4 +1,4 @@
-import * as unzipper from "unzipper";
+import jszip from 'jszip';
 import { Sheet } from "../sheet/sheet";
 import XMLDOM from "xmldom";
 import { getCellCoords, select } from "../utils";
@@ -30,13 +30,14 @@ export class XLSXParser {
 	}
 
 	private async unpack() {
-		const dir = await unzipper.Open.buffer(this.buffer);
-		const files = Array.from(dir.files);
+		const dir = await jszip.loadAsync(this.buffer)
+		const files = []
+		dir.forEach((path, file) => files.push({path, file}))
 
 		this.filesParsed = await Promise.all(
 			files.map(async (file) => ({
 				name: file.path,
-				contents: await file.buffer(),
+				contents: await file.file.async('nodebuffer'),
 			}))
 		);
 
