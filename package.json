@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/tuvia-r/lightwaight-xlsx-file-parser#readme",
   "dependencies": {
-    "unzipper": "^0.10.11",
+    "jszip": "^3.10.1",
     "xmldom": "^0.6.0",
     "xpath": "^0.0.32"
   },
