@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "xlsx-file-parser-light": "0.0.8"
+    "xlsx-file-parser-light": "0.0.9"
   },
   "devDependencies": {
     "html-loader": "^4.1.0",
