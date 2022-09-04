@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && parcel build src/index.js && cp src/index.html dist",
-    "serve": "rm -rf dist && parcel src/index.html"
+    "build": "rm -rf dist && webpack --mode=production && cp src/index.html dist",
+    "serve": "webpack serve --mode=development"
   },
   "author": "",
   "license": "ISC",
@@ -13,15 +13,9 @@
     "xlsx-file-parser-light": "0.0.4"
   },
   "devDependencies": {
-    "assert": "^2.0.0",
-    "browserify-zlib": "^0.2.0",
-    "buffer": "^6.0.3",
-    "constants-browserify": "^1.0.0",
-    "events": "^3.3.0",
-    "parcel": "^2.7.0",
-    "path-browserify": "^1.0.1",
-    "process": "^0.11.10",
-    "stream-browserify": "^3.0.0",
-    "util": "^0.12.4"
+    "html-loader": "^4.1.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1"
   }
 }
