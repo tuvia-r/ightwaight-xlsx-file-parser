@@ -1,6 +1,6 @@
 {
   "name": "xlsx-file-parser-light",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "light waight parser for xlsx file",
   "main": "dist/index.js",
   "scripts": {
