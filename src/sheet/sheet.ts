@@ -11,11 +11,11 @@ export class Sheet {
 		Object.assign(this, init);
 	}
 	get numberOfRows() {
-		return Math.max(...this.cells.map((c) => c.row));
+		return Math.max(...this.cells.map((c) => c.row)) + 1;
 	}
 
 	get numberOfColumns() {
-		return Math.max(...this.cells.map((c) => c.column));
+		return Math.max(...this.cells.map((c) => c.column)) + 1;
 	}
 
 	get startRow() {
