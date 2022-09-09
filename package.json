@@ -1,7 +1,7 @@
 {
   "name": "xlsx-file-parser-light",
   "version": "0.0.10",
-  "description": "light waight parser for xlsx file",
+  "description": "light weight parser for xlsx file",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tuvia-r/lightwaight-xlsx-file-parser.git"
+    "url": "git+https://github.com/tuvia-r/xlsx-file-parser-light.git"
   },
   "keywords": [
     "xlsx",
@@ -21,9 +21,9 @@
   "author": "tuviarumpler@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tuvia-r/lightwaight-xlsx-file-parser/issues"
+    "url": "https://github.com/tuvia-r/xlsx-file-parser-light/issues"
   },
-  "homepage": "https://github.com/tuvia-r/lightwaight-xlsx-file-parser#readme",
+  "homepage": "https://github.com/tuvia-r/xlsx-file-parser-light#readme",
   "dependencies": {
     "buffer": "^6.0.3",
     "jszip": "^3.10.1",

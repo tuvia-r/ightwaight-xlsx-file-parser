@@ -2,7 +2,7 @@
 
 based on https://github.com/trevordixon/excel.js work for local files.
 
-# [Demo](https://tuvia-r.github.io/lightwaight-xlsx-file-parser/)
+# [Demo](https://tuvia-r.github.io/xlsx-file-parser-light/)
 
 # Installation
 
